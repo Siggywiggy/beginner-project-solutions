@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="114a2629-faaf-400b-a7d9-a99a11046193" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../Automate_Boring_Stuff_Python_Al_Sweigart/Chapters/19_Manipulating_Images/changing_individual_pixels.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/beginner-project-solutions.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/99_bottles_solution.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Magic_8_ball_solution.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/change_calculator_solution.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/coin_estimator_by_weight_solution.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mean_median_mode_solution.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/multiplication_table_solution.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pytagoran_triple_solution.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/qock_paper_scissors_solution.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Automate_Boring_Stuff_Python_Al_Sweigart/.idea/Automate_Boring_Stuff_Python_Al_Sweigart.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../Automate_Boring_Stuff_Python_Al_Sweigart/.idea/Automate_Boring_Stuff_Python_Al_Sweigart.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Automate_Boring_Stuff_Python_Al_Sweigart/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Automate_Boring_Stuff_Python_Al_Sweigart/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Automate_Boring_Stuff_Python_Al_Sweigart/Chapters/8_Input_validation/8_custom_validation_function_inputCustom.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Automate_Boring_Stuff_Python_Al_Sweigart/Chapters/8_Input_validation/8_custom_validation_function_inputCustom.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FormatOnSaveOptions">
+    <option name="myRunOnSave" value="true" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "Siggywiggy"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/Siggywiggy/Automate_Boring_Stuff_Python_Al_Sweigart_.git",
+    "accountId": "dd99c315-64ea-4cb7-a1ab-8314227a6d27"
+  }
+}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="2oWgLSCkTH13anwydW0fiiUgJlR" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.5_setdefault_method_count_occurrences.executor": "Run",
+    "Python.99_bottles_solution.executor": "Run",
+    "Python.Magic_8_ball_solution.executor": "Run",
+    "Python.change_calculator_solution.executor": "Run",
+    "Python.coin_estimator_by_weight_solution.executor": "Run",
+    "Python.mean_median_mode_solution.executor": "Run",
+    "Python.pytagoran_triple_solution.executor": "Run",
+    "Python.qock_paper_scissors_solution.executor": "Run",
+    "Python.tkinter_test.executor": "Run",
+    "Python.wxGTK_test.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "settings.editor.selected.configurable": "com.jetbrains.python.black.configuration.BlackFormatterConfigurable"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-884f5ed5d46b-c546a90a8094-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-242.22855.92" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="114a2629-faaf-400b-a7d9-a99a11046193" name="Changes" comment="" />
+      <created>1730990690015</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1730990690015</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/change_calculator_solution.py</url>
+          <line>44</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
