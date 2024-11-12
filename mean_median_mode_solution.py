@@ -1,4 +1,5 @@
 #! python3
+from mesonbuild.utils.universal import exe_exists
 
 
 # mean function

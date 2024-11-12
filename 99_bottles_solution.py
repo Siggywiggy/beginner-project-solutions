@@ -12,9 +12,7 @@ while num_bottles > 1:
             f"Take one down and pass it around, {num_bottles} bottle of beer on the wall."
         )
     else:
-        print(
-            f"Take one down and pass it around, {num_bottles} bottles of beer on the wall."
-        )
+        print(f"Take one down and pass it around, {num_bottles} bottles of beer on the wall.")
 
 print(f"{num_bottles} bottle of beer on the wall, {num_bottles} bottle of beer.")
 print(f"Take one down and pass it around, no more bottles of beer on the wall.")
