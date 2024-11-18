@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="114a2629-faaf-400b-a7d9-a99a11046193" name="Changes" comment="work on solutions">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="114a2629-faaf-400b-a7d9-a99a11046193" name="Changes" comment="work on multiplication table solution">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/99_bottles_solution.py" beforeDir="false" afterPath="$PROJECT_DIR$/99_bottles_solution.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mean_median_mode_solution.py" beforeDir="false" afterPath="$PROJECT_DIR$/mean_median_mode_solution.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/multiplication_table_solution.py" beforeDir="false" afterPath="$PROJECT_DIR$/multiplication_table_solution.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/qock_paper_scissors_solution.py" beforeDir="false" afterPath="$PROJECT_DIR$/rock_paper_scissors_solution.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,6 +26,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="SYNC" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {
@@ -52,24 +51,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.5_setdefault_method_count_occurrences.executor": "Run",
-    "Python.99_bottles_solution.executor": "Run",
-    "Python.Magic_8_ball_solution.executor": "Run",
-    "Python.change_calculator_solution.executor": "Run",
-    "Python.coin_estimator_by_weight_solution.executor": "Run",
-    "Python.mean_median_mode_solution.executor": "Run",
-    "Python.multiplication_table_solution.executor": "Run",
-    "Python.pytagoran_triple_solution.executor": "Run",
-    "Python.qock_paper_scissors_solution.executor": "Run",
-    "Python.tkinter_test.executor": "Run",
-    "Python.wxGTK_test.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "settings.editor.selected.configurable": "com.jetbrains.python.black.configuration.BlackFormatterConfigurable"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.5_setdefault_method_count_occurrences.executor&quot;: &quot;Run&quot;,
+    &quot;Python.99_bottles_solution.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Magic_8_ball_solution.executor&quot;: &quot;Run&quot;,
+    &quot;Python.change_calculator_solution.executor&quot;: &quot;Run&quot;,
+    &quot;Python.coin_estimator_by_weight_solution.executor&quot;: &quot;Run&quot;,
+    &quot;Python.mean_median_mode_solution.executor&quot;: &quot;Run&quot;,
+    &quot;Python.multiplication_table_solution.executor&quot;: &quot;Run&quot;,
+    &quot;Python.pytagoran_triple_solution.executor&quot;: &quot;Run&quot;,
+    &quot;Python.qock_paper_scissors_solution.executor&quot;: &quot;Run&quot;,
+    &quot;Python.tkinter_test.executor&quot;: &quot;Run&quot;,
+    &quot;Python.wxGTK_test.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.black.configuration.BlackFormatterConfigurable&quot;
   }
-}]]></component>
+}</component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -94,12 +93,29 @@
       <option name="project" value="LOCAL" />
       <updated>1731100872832</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="work on multiplication table solution">
+      <option name="closed" value="true" />
+      <created>1731448309260</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1731448309260</updated>
+    </task>
+    <task id="LOCAL-00003" summary="work on multiplication table solution">
+      <option name="closed" value="true" />
+      <created>1731448424744</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1731448424744</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="work on solutions" />
-    <option name="LAST_COMMIT_MESSAGE" value="work on solutions" />
+    <MESSAGE value="work on multiplication table solution" />
+    <option name="LAST_COMMIT_MESSAGE" value="work on multiplication table solution" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
