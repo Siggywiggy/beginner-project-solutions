@@ -4,13 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="114a2629-faaf-400b-a7d9-a99a11046193" name="Changes" comment="work on multiplication table solution">
-      <change afterPath="$PROJECT_DIR$/fibonacci_sequence_solution.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_12_11_2024,_23_51_[Changes]/purpleImage.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_12_11_2024,_23_51_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_12_11_2024,_23_51_[Changes]/transparentImage.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_12_11_2024__23_51__Changes_.xml" beforeDir="false" />
+    <list default="true" id="114a2629-faaf-400b-a7d9-a99a11046193" name="Changes" comment="multiplication table solution, work on fiboncacci sequence functions">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fibonacci_sequence_solution.py" beforeDir="false" afterPath="$PROJECT_DIR$/fibonacci_sequence_solution.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/multiplication_table_solution.py" beforeDir="false" afterPath="$PROJECT_DIR$/multiplication_table_solution.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -60,6 +56,7 @@
     "Python.5_setdefault_method_count_occurrences.executor": "Run",
     "Python.99_bottles_solution.executor": "Run",
     "Python.Magic_8_ball_solution.executor": "Run",
+    "Python.base_jumper_solution.executor": "Run",
     "Python.change_calculator_solution.executor": "Run",
     "Python.coin_estimator_by_weight_solution.executor": "Run",
     "Python.fibonacci_sequence_solution.executor": "Run",
@@ -122,13 +119,22 @@
       <option name="project" value="LOCAL" />
       <updated>1731964369513</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="multiplication table solution, work on fiboncacci sequence functions">
+      <option name="closed" value="true" />
+      <created>1732741266683</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1732741266683</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="work on solutions" />
     <MESSAGE value="work on multiplication table solution" />
-    <option name="LAST_COMMIT_MESSAGE" value="work on multiplication table solution" />
+    <MESSAGE value="multiplication table solution, work on fiboncacci sequence functions" />
+    <option name="LAST_COMMIT_MESSAGE" value="multiplication table solution, work on fiboncacci sequence functions" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

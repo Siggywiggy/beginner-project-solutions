@@ -20,7 +20,7 @@ for i in range(0, multiplication_range):
     row_adjusted = str()
     for j in range(0, len(multiplication_table[i])):
         if (
-                len(str(multiplication_table[i][j])) == column_widths[j]
+            len(str(multiplication_table[i][j])) == column_widths[j]
         ):  # if the num is as wide as the widest column
             # print(
             #    f"do nothing, number is as wide as the widest column, column width is {column_widths[j]} and lenght of number is {len(str(multiplication_table[i][j]))}"
