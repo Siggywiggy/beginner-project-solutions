@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="114a2629-faaf-400b-a7d9-a99a11046193" name="Changes" comment="work on base_jumper program">
+    <list default="true" id="114a2629-faaf-400b-a7d9-a99a11046193" name="Changes" comment="work on multiplication table solution">
+      <change afterPath="$PROJECT_DIR$/hangman_game_ascii.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hangman_game_dictionary.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hangman_game_solution.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/beginner-project-solutions.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/beginner-project-solutions.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -49,30 +54,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python.5_setdefault_method_count_occurrences.executor&quot;: &quot;Run&quot;,
-    &quot;Python.99_bottles_solution.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Magic_8_ball_solution.executor&quot;: &quot;Run&quot;,
-    &quot;Python.base_jumper_solution.executor&quot;: &quot;Run&quot;,
-    &quot;Python.change_calculator_solution.executor&quot;: &quot;Run&quot;,
-    &quot;Python.coin_estimator_by_weight_solution.executor&quot;: &quot;Run&quot;,
-    &quot;Python.fibonacci_sequence_solution.executor&quot;: &quot;Run&quot;,
-    &quot;Python.mean_median_mode_solution.executor&quot;: &quot;Run&quot;,
-    &quot;Python.multiplication_table_solution.executor&quot;: &quot;Run&quot;,
-    &quot;Python.pytagoran_triple_solution.executor&quot;: &quot;Run&quot;,
-    &quot;Python.qock_paper_scissors_solution.executor&quot;: &quot;Run&quot;,
-    &quot;Python.tkinter_test.executor&quot;: &quot;Run&quot;,
-    &quot;Python.wxGTK_test.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.black.configuration.BlackFormatterConfigurable&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.5_setdefault_method_count_occurrences.executor": "Run",
+    "Python.99_bottles_solution.executor": "Run",
+    "Python.Magic_8_ball_solution.executor": "Run",
+    "Python.change_calculator_solution.executor": "Run",
+    "Python.coin_estimator_by_weight_solution.executor": "Run",
+    "Python.fibonacci_sequence_solution.executor": "Run",
+    "Python.hangman_game_solution.executor": "Run",
+    "Python.mean_median_mode_solution.executor": "Run",
+    "Python.multiplication_table_solution.executor": "Run",
+    "Python.pytagoran_triple_solution.executor": "Run",
+    "Python.qock_paper_scissors_solution.executor": "Run",
+    "Python.tkinter_test.executor": "Run",
+    "Python.wxGTK_test.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Users/Aadam/PycharmProjects/Automate_Boring_Stuff_Python_Al_Sweigart_",
+    "settings.editor.selected.configurable": "com.jetbrains.python.black.configuration.BlackFormatterConfigurable"
   }
-}</component>
+}]]></component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-python-sdk-884f5ed5d46b-c546a90a8094-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-242.22855.92" />
+        <option value="bundled-python-sdk-1b1018131e27-aa17d162503b-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-243.22562.180" />
       </set>
     </attachedChunks>
   </component>
@@ -117,39 +124,13 @@
       <option name="project" value="LOCAL" />
       <updated>1731964369513</updated>
     </task>
-    <task id="LOCAL-00005" summary="multiplication table solution, work on fiboncacci sequence functions">
-      <option name="closed" value="true" />
-      <created>1732741266683</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1732741266683</updated>
-    </task>
-    <task id="LOCAL-00006" summary="work on base_jumper program">
-      <option name="closed" value="true" />
-      <created>1733948972625</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1733948972625</updated>
-    </task>
-    <task id="LOCAL-00007" summary="work on base_jumper program">
-      <option name="closed" value="true" />
-      <created>1733951222863</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1733951222863</updated>
-    </task>
-    <option name="localTasksCounter" value="8" />
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="work on solutions" />
     <MESSAGE value="work on multiplication table solution" />
-    <MESSAGE value="multiplication table solution, work on fiboncacci sequence functions" />
-    <MESSAGE value="work on base_jumper program" />
-    <option name="LAST_COMMIT_MESSAGE" value="work on base_jumper program" />
+    <option name="LAST_COMMIT_MESSAGE" value="work on multiplication table solution" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
