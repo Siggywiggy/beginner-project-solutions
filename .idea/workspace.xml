@@ -4,13 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="114a2629-faaf-400b-a7d9-a99a11046193" name="Changes" comment="work on base_jumper program">
-      <change afterPath="$PROJECT_DIR$/base_jumper_3_solution.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/beginner-project-solutions.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/beginner-project-solutions.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="114a2629-faaf-400b-a7d9-a99a11046193" name="Changes" comment="finish hangman game">
+      <change afterPath="$PROJECT_DIR$/dice_rolling_simulator_solution.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Magic_8_ball_solution.py" beforeDir="false" afterPath="$PROJECT_DIR$/Magic_8_ball_solution.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hangman_game_solution.py" beforeDir="false" afterPath="$PROJECT_DIR$/hangman_game_solution.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/base_jumper_3_solution.py" beforeDir="false" afterPath="$PROJECT_DIR$/base_jumper_3_solution.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,9 +56,11 @@
     "Python.5_setdefault_method_count_occurrences.executor": "Run",
     "Python.99_bottles_solution.executor": "Run",
     "Python.Magic_8_ball_solution.executor": "Run",
+    "Python.base_jumper_3_solution.executor": "Run",
     "Python.base_jumper_solution.executor": "Run",
     "Python.change_calculator_solution.executor": "Run",
     "Python.coin_estimator_by_weight_solution.executor": "Run",
+    "Python.dice_rolling_simulator_solution.executor": "Run",
     "Python.fibonacci_sequence_solution.executor": "Run",
     "Python.hangman_game_solution.executor": "Run",
     "Python.mean_median_mode_solution.executor": "Run",
@@ -164,7 +163,15 @@
       <option name="project" value="LOCAL" />
       <updated>1734125654412</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="finish hangman game">
+      <option name="closed" value="true" />
+      <created>1734127813832</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1734127813832</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -183,7 +190,8 @@
     <MESSAGE value="work on multiplication table solution" />
     <MESSAGE value="multiplication table solution, work on fiboncacci sequence functions" />
     <MESSAGE value="work on base_jumper program" />
-    <option name="LAST_COMMIT_MESSAGE" value="work on base_jumper program" />
+    <MESSAGE value="finish hangman game" />
+    <option name="LAST_COMMIT_MESSAGE" value="finish hangman game" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -193,7 +201,18 @@
           <line>44</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/base_jumper_3_solution.py</url>
+          <line>116</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="PythonConfigurationType">
+        <watch expression="digits" />
+        <watch expression="base" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>

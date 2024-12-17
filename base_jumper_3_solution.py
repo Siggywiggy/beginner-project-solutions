@@ -4,8 +4,6 @@ import pyinputplus as pyip
 
 
 # a function to convert any number in any base to decimal
-
-
 def to_decimal(number, base):
     # separating the digits in to a list of digits
     # using the optional parameter in int() method to convert alphabetical notation to a number for calculation (A-F)
@@ -14,28 +12,26 @@ def to_decimal(number, base):
     digits.reverse()
     result = int()
     # for loop to calculate each value of digit * base value ** exponent and sum in to result variable
-    for x in range(0, len(number)):
+    for x in range(0, len(str(number))):
         result += int(digits[x]) * base ** x
 
-    return result
+    return int(str(result), 10)
 
-
-# print(to_decimal('B532',13))
 
 # a function to convert from decimal number to any base
 
 
-def from_decimal_to_base(number, base):
+def from_decimal_to_base(number, to_base):
     # if the number is already in decimal cant convert to decimal again
     if base == 10:
         print("Number is already in decimal, no need to convert to decimal again")
-        return False
+        return number
 
     number = int(number)
     result = str()
 
     while True:
-        # find both quotient and remainder at once is divmod() method
+        # find both quotient and remainder at once with divmod() method
         quotient, remainder = divmod(number, base)
         # or longer
         # quotient = number // base
@@ -47,15 +43,12 @@ def from_decimal_to_base(number, base):
             # no need to further find the quotient as we have reached the final digit
             break
         else:
-            # keep adding the remiander to the result
+            # keep adding the remainder to the result
             result += str(remainder)
             # keep looping over the quotient
             number = quotient
-    # negative slice of a string is reversed string
-    return result[::-1]
-
-
-# print(from_decimal_to_base(47, 2))
+    # negative slice of a string is reversed string - digits in correct order
+    return int(str(result[::-1]))
 
 
 def validity_checker(number, base):
@@ -90,16 +83,51 @@ def validity_checker(number, base):
     for x in digits_list:
         if x not in valid_digits:
             return False
-    return True
+
+    # convert number to string, try converting back to integer using int()
+    try:
+        int(str(number), base)
+    except ValueError:
+        print(f"The number {number} is not in correct base - {base} ")
+        return False
+    else:
+        return True
 
 
-print(validity_checker("10", 2))
+while True:
 
-base = pyip.inputInt(
-    prompt="Please input a base between 2 and 16: \n", greaterThan=1, lessThan=17
-)
+    number = pyip.inputNum(
+        prompt="Please input the number you want to convert, in base 2-16: \n",
+        allowRegexes=[r"^[0-9A-F]+$"],
+    )
 
-number = pyip.inputNum(
-    prompt="Please input the number you want to convert, in base 2-16: \n",
-    allowRegexes=[r"^[0-9A-F]+$"],
-)
+    from_base = pyip.inputInt(
+        prompt="What base is the number in - please input a base between 2 and 16: \n",
+        greaterThan=1,
+        lessThan=17,
+    )
+
+    to_base = pyip.inputInt(
+        prompt="What base to convert to - please input a base between 2 and 16: \n",
+        greaterThan=1,
+        lessThan=17,
+    )
+    # if the number is a number in the base it was declared to be in
+    if validity_checker(number, from_base):
+        if from_base == 10:
+            result = from_decimal_to_base(number, to_base)
+            print(
+                f"number {number} in base {from_base} converted to base {to_base} is {result}"
+            )
+        elif to_base == 10:
+            result = to_decimal(number, from_base)
+            print(
+                f"number {number} in base {from_base} converted to base {to_base} is {result}"
+            )
+        else:
+            result = from_decimal_to_base(to_decimal(number, from_base), to_base)
+            print(
+                f"number {number} in base {from_base} converted to base {to_base} is {result}"
+            )
+    else:
+        print("Number was incorrect, try again")
