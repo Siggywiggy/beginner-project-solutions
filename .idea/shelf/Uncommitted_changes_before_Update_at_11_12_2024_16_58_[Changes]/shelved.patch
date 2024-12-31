@@ -1,0 +1,167 @@
+Index: multiplication_table_solution.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>#! python3\r\n# a program that prints oout multiplication table 1 - 9\r\n\r\nmultiplication_range = int(input(\"Please enter the desired multiplication range\"))\r\n\r\n# set up the 2D array / list of lists\r\nmultiplication_table = [[] for x in range(multiplication_range)]\r\n\r\n# populate the lists inside main list with a double for loop 1x1 1x2 1x3 etc\r\nfor i in range(1, multiplication_range + 1):\r\n    for j in range(1, multiplication_range + 1):\r\n        multiplication_table[i - 1].append(i * j)\r\n\r\n# determine the widest numeric value in the very bottom of the table aka the highest values\r\ncolumn_widths = [len(str(i)) for i in multiplication_table[-1]]\r\n\r\n# print(column_widths)\r\n\r\nfor i in range(0, multiplication_range):\r\n    row_adjusted = str()\r\n    for num in multiplication_table[i]:\r\n        string_num = str(num)\r\n        # print(f\"current column is {column_widths[i]} wide\")\r\n        # print(f\"number is {string_num}, {len(string_num)} wide\")\r\n        if len(string_num) >= column_widths[i]:\r\n            row_adjusted += string_num\r\n            # print(\"dont need to adjust!\")\r\n        else:\r\n            # print(\"need to adjust\")\r\n            total_lenght = column_widths[i]\r\n            # print(\r\n            #    f\"need to add {column_widths[i] - len(string_num)} spaces to the left\"\r\n            # )\r\n            # adjusted_num = string_num.rjust(total_lenght, \"*\")\r\n            adjusted_num = (column_widths[i] - len(string_num)) * \"x\" + string_num\r\n            # adjusted_num = string_num.rjust(total_lenght, \"x\")\r\n            # print(f\"adjusted number is {adjusted_num}\")\r\n            row_adjusted += adjusted_num\r\n    print(row_adjusted)\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/multiplication_table_solution.py b/multiplication_table_solution.py
+--- a/multiplication_table_solution.py	(revision 7d33e4d5d38d98be09f310906eeb530555116074)
++++ b/multiplication_table_solution.py	(date 1731507275716)
+@@ -16,6 +16,7 @@
+ 
+ # print(column_widths)
+ 
++
+ for i in range(0, multiplication_range):
+     row_adjusted = str()
+     for num in multiplication_table[i]:
+@@ -36,4 +37,4 @@
+             # adjusted_num = string_num.rjust(total_lenght, "x")
+             # print(f"adjusted number is {adjusted_num}")
+             row_adjusted += adjusted_num
+-    print(row_adjusted)
++    print(row_adjusted)
+\ No newline at end of file
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"114a2629-faaf-400b-a7d9-a99a11046193\" name=\"Changes\" comment=\"work on solutions\">\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/vcs.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/vcs.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/99_bottles_solution.py\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/99_bottles_solution.py\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/mean_median_mode_solution.py\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/mean_median_mode_solution.py\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/multiplication_table_solution.py\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/multiplication_table_solution.py\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"Python Script\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"FormatOnSaveOptions\">\r\n    <option name=\"myRunOnSave\" value=\"true\" />\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"GitHubPullRequestSearchHistory\">{\r\n  &quot;lastFilter&quot;: {\r\n    &quot;state&quot;: &quot;OPEN&quot;,\r\n    &quot;assignee&quot;: &quot;Siggywiggy&quot;\r\n  }\r\n}</component>\r\n  <component name=\"GithubPullRequestsUISettings\">{\r\n  &quot;selectedUrlAndAccountId&quot;: {\r\n    &quot;url&quot;: &quot;https://github.com/Siggywiggy/Automate_Boring_Stuff_Python_Al_Sweigart_.git&quot;,\r\n    &quot;accountId&quot;: &quot;dd99c315-64ea-4cb7-a1ab-8314227a6d27&quot;\r\n  }\r\n}</component>\r\n  <component name=\"ProjectColorInfo\">{\r\n  &quot;associatedIndex&quot;: 1\r\n}</component>\r\n  <component name=\"ProjectId\" id=\"2oWgLSCkTH13anwydW0fiiUgJlR\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\">\r\n    <ConfirmationsSetting value=\"2\" id=\"Add\" />\r\n  </component>\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\"><![CDATA[{\r\n  \"keyToString\": {\r\n    \"Python.5_setdefault_method_count_occurrences.executor\": \"Run\",\r\n    \"Python.99_bottles_solution.executor\": \"Run\",\r\n    \"Python.Magic_8_ball_solution.executor\": \"Run\",\r\n    \"Python.change_calculator_solution.executor\": \"Run\",\r\n    \"Python.coin_estimator_by_weight_solution.executor\": \"Run\",\r\n    \"Python.mean_median_mode_solution.executor\": \"Run\",\r\n    \"Python.multiplication_table_solution.executor\": \"Run\",\r\n    \"Python.pytagoran_triple_solution.executor\": \"Run\",\r\n    \"Python.qock_paper_scissors_solution.executor\": \"Run\",\r\n    \"Python.tkinter_test.executor\": \"Run\",\r\n    \"Python.wxGTK_test.executor\": \"Run\",\r\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\r\n    \"git-widget-placeholder\": \"main\",\r\n    \"settings.editor.selected.configurable\": \"com.jetbrains.python.black.configuration.BlackFormatterConfigurable\"\r\n  }\r\n}]]></component>\r\n  <component name=\"SharedIndexes\">\r\n    <attachedChunks>\r\n      <set>\r\n        <option value=\"bundled-python-sdk-884f5ed5d46b-c546a90a8094-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-242.22855.92\" />\r\n      </set>\r\n    </attachedChunks>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"114a2629-faaf-400b-a7d9-a99a11046193\" name=\"Changes\" comment=\"\" />\r\n      <created>1730990690015</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1730990690015</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"work on solutions\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1731100872832</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1731100872832</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"2\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"work on solutions\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"work on solutions\" />\r\n  </component>\r\n  <component name=\"XDebuggerManager\">\r\n    <breakpoint-manager>\r\n      <breakpoints>\r\n        <line-breakpoint enabled=\"true\" suspend=\"THREAD\" type=\"python-line\">\r\n          <url>file://$PROJECT_DIR$/change_calculator_solution.py</url>\r\n          <line>44</line>\r\n          <option name=\"timeStamp\" value=\"2\" />\r\n        </line-breakpoint>\r\n      </breakpoints>\r\n    </breakpoint-manager>\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 7d33e4d5d38d98be09f310906eeb530555116074)
++++ b/.idea/workspace.xml	(date 1733928502839)
+@@ -5,11 +5,16 @@
+   </component>
+   <component name="ChangeListManager">
+     <list default="true" id="114a2629-faaf-400b-a7d9-a99a11046193" name="Changes" comment="work on solutions">
+-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/base_jumper_2_solution.py" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/beginner-project-solutions.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/beginner-project-solutions.iml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_12_11_2024,_23_51_[Changes]/purpleImage.png" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_12_11_2024,_23_51_[Changes]/shelved.patch" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_12_11_2024,_23_51_[Changes]/transparentImage.png" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_12_11_2024__23_51__Changes_.xml" beforeDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/99_bottles_solution.py" beforeDir="false" afterPath="$PROJECT_DIR$/99_bottles_solution.py" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/mean_median_mode_solution.py" beforeDir="false" afterPath="$PROJECT_DIR$/mean_median_mode_solution.py" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/multiplication_table_solution.py" beforeDir="false" afterPath="$PROJECT_DIR$/multiplication_table_solution.py" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/qock_paper_scissors_solution.py" beforeDir="false" afterPath="$PROJECT_DIR$/rock_paper_scissors_solution.py" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -41,6 +46,9 @@
+     &quot;accountId&quot;: &quot;dd99c315-64ea-4cb7-a1ab-8314227a6d27&quot;
+   }
+ }</component>
++  <component name="ProblemsViewState">
++    <option name="selectedTabId" value="ProjectErrors" />
++  </component>
+   <component name="ProjectColorInfo">{
+   &quot;associatedIndex&quot;: 1
+ }</component>
+@@ -57,6 +65,7 @@
+     "Python.5_setdefault_method_count_occurrences.executor": "Run",
+     "Python.99_bottles_solution.executor": "Run",
+     "Python.Magic_8_ball_solution.executor": "Run",
++    "Python.base_jumper_2_solution.executor": "Run",
+     "Python.change_calculator_solution.executor": "Run",
+     "Python.coin_estimator_by_weight_solution.executor": "Run",
+     "Python.mean_median_mode_solution.executor": "Run",
+@@ -67,13 +76,15 @@
+     "Python.wxGTK_test.executor": "Run",
+     "RunOnceActivity.ShowReadmeOnStart": "true",
+     "git-widget-placeholder": "main",
++    "ignore.virus.scanning.warn.message": "true",
++    "last_opened_file_path": "C:/Users/Aadam/PycharmProjects/beginner-project-solutions",
+     "settings.editor.selected.configurable": "com.jetbrains.python.black.configuration.BlackFormatterConfigurable"
+   }
+ }]]></component>
+   <component name="SharedIndexes">
+     <attachedChunks>
+       <set>
+-        <option value="bundled-python-sdk-884f5ed5d46b-c546a90a8094-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-242.22855.92" />
++        <option value="bundled-python-sdk-6a3326d57233-c546a90a8094-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-242.24807.21" />
+       </set>
+     </attachedChunks>
+   </component>
+Index: .idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"Black\">\r\n    <option name=\"enabledOnSave\" value=\"true\" />\r\n    <option name=\"sdkName\" value=\"Python 3.11 (beginner-project-solutions)\" />\r\n  </component>\r\n  <component name=\"ProjectRootManager\" version=\"2\" project-jdk-name=\"Python 3.11 (beginner-project-solutions)\" project-jdk-type=\"Python SDK\" />\r\n  <component name=\"PyPackaging\">\r\n    <option name=\"earlyReleasesAsUpgrades\" value=\"true\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/misc.xml b/.idea/misc.xml
+--- a/.idea/misc.xml	(revision 7d33e4d5d38d98be09f310906eeb530555116074)
++++ b/.idea/misc.xml	(date 1733923980416)
+@@ -4,7 +4,7 @@
+     <option name="enabledOnSave" value="true" />
+     <option name="sdkName" value="Python 3.11 (beginner-project-solutions)" />
+   </component>
+-  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.11 (beginner-project-solutions)" project-jdk-type="Python SDK" />
++  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.12 (beginner_projects_solutions)" project-jdk-type="Python SDK" />
+   <component name="PyPackaging">
+     <option name="earlyReleasesAsUpgrades" value="true" />
+   </component>
+Index: .idea/beginner-project-solutions.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<module type=\"PYTHON_MODULE\" version=\"4\">\r\n  <component name=\"NewModuleRootManager\">\r\n    <content url=\"file://$MODULE_DIR$\">\r\n      <excludeFolder url=\"file://$MODULE_DIR$/.venv\" />\r\n      <excludeFolder url=\"file://$MODULE_DIR$/.venv2\" />\r\n      <excludeFolder url=\"file://$MODULE_DIR$/.venv3\" />\r\n    </content>\r\n    <orderEntry type=\"jdk\" jdkName=\"Python 3.11 (beginner-project-solutions)\" jdkType=\"Python SDK\" />\r\n    <orderEntry type=\"sourceFolder\" forTests=\"false\" />\r\n    <orderEntry type=\"module\" module-name=\"Automate_Boring_Stuff_Python_Al_Sweigart\" />\r\n  </component>\r\n</module>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/beginner-project-solutions.iml b/.idea/beginner-project-solutions.iml
+--- a/.idea/beginner-project-solutions.iml	(revision 7d33e4d5d38d98be09f310906eeb530555116074)
++++ b/.idea/beginner-project-solutions.iml	(date 1733923980406)
+@@ -6,7 +6,7 @@
+       <excludeFolder url="file://$MODULE_DIR$/.venv2" />
+       <excludeFolder url="file://$MODULE_DIR$/.venv3" />
+     </content>
+-    <orderEntry type="jdk" jdkName="Python 3.11 (beginner-project-solutions)" jdkType="Python SDK" />
++    <orderEntry type="jdk" jdkName="Python 3.12 (beginner_projects_solutions)" jdkType="Python SDK" />
+     <orderEntry type="sourceFolder" forTests="false" />
+     <orderEntry type="module" module-name="Automate_Boring_Stuff_Python_Al_Sweigart" />
+   </component>
+Index: base_jumper_2_solution.py
+===================================================================
+diff --git a/base_jumper_2_solution.py b/base_jumper_2_solution.py
+new file mode 100644
+--- /dev/null	(date 1733929044560)
++++ b/base_jumper_2_solution.py	(date 1733929044560)
+@@ -0,0 +1,28 @@
++def from_base_to_decimal(number, from_base):
++    # create a list of digits,
++    # convert to numeric values if higher then 9th base digits A-F
++    digits = [int(x, from_base) for x in str(number)]
++    digits.reverse()
++    result = 0
++    for x in range(len(str(number))):
++        result += int(digits[x]) * (from_base ** x)
++    return result
++
++
++print(from_base_to_decimal('28B77', 16))
++
++
++def decimal_to_base(number, to_base):
++    result = str()
++    while True:
++        floor_div, remainder = divmod(number, to_base)
++        if remainder == 0:
++            break
++        else:
++            result += str(remainder)
++            # print(f'current number is {number}, adding {remainder}, number to be divided next is {floor_div} ')
++            number = floor_div
++    return int(result[::-1])
++
++
++print(decimal_to_base(166775, 16))
+\ No newline at end of file
+diff --git a/qock_paper_scissors_solution.py b/rock_paper_scissors_solution.py
+rename from qock_paper_scissors_solution.py
+rename to rock_paper_scissors_solution.py
