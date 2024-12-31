@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="114a2629-faaf-400b-a7d9-a99a11046193" name="Changes" comment="work on multiplication table solution">
-      <change afterPath="$PROJECT_DIR$/countdown_clock_solution.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/factors_of_number_solution.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/whats_my_number_solution.py" afterDir="false" />
+    <list default="true" id="114a2629-faaf-400b-a7d9-a99a11046193" name="Changes" comment="finish hangman game">
+      <change afterPath="$PROJECT_DIR$/dice_rolling_simulator_solution.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/base_jumper_3_solution.py" beforeDir="false" afterPath="$PROJECT_DIR$/base_jumper_3_solution.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,36 +51,34 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python.5_setdefault_method_count_occurrences.executor&quot;: &quot;Run&quot;,
-    &quot;Python.99_bottles_solution.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Magic_8_ball_solution.executor&quot;: &quot;Run&quot;,
-    &quot;Python.change_calculator_solution.executor&quot;: &quot;Run&quot;,
-    &quot;Python.coin_estimator_by_weight_solution.executor&quot;: &quot;Run&quot;,
-    &quot;Python.countdown_clock_solution.executor&quot;: &quot;Run&quot;,
-    &quot;Python.factors_of_number_solution.executor&quot;: &quot;Run&quot;,
-    &quot;Python.fibonacci_sequence_solution.executor&quot;: &quot;Run&quot;,
-    &quot;Python.hangman_game_solution.executor&quot;: &quot;Run&quot;,
-    &quot;Python.mean_median_mode_solution.executor&quot;: &quot;Run&quot;,
-    &quot;Python.multiplication_table_solution.executor&quot;: &quot;Run&quot;,
-    &quot;Python.pytagoran_triple_solution.executor&quot;: &quot;Run&quot;,
-    &quot;Python.qock_paper_scissors_solution.executor&quot;: &quot;Run&quot;,
-    &quot;Python.tkinter_test.executor&quot;: &quot;Run&quot;,
-    &quot;Python.whats_my_num_solution_2.executor&quot;: &quot;Run&quot;,
-    &quot;Python.whats_my_number_solution.executor&quot;: &quot;Run&quot;,
-    &quot;Python.wxGTK_test.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Aadam/PycharmProjects/Automate_Boring_Stuff_Python_Al_Sweigart_&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.black.configuration.BlackFormatterConfigurable&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.5_setdefault_method_count_occurrences.executor": "Run",
+    "Python.99_bottles_solution.executor": "Run",
+    "Python.Magic_8_ball_solution.executor": "Run",
+    "Python.base_jumper_3_solution.executor": "Run",
+    "Python.base_jumper_solution.executor": "Run",
+    "Python.change_calculator_solution.executor": "Run",
+    "Python.coin_estimator_by_weight_solution.executor": "Run",
+    "Python.dice_rolling_simulator_solution.executor": "Run",
+    "Python.fibonacci_sequence_solution.executor": "Run",
+    "Python.hangman_game_solution.executor": "Run",
+    "Python.mean_median_mode_solution.executor": "Run",
+    "Python.multiplication_table_solution.executor": "Run",
+    "Python.pytagoran_triple_solution.executor": "Run",
+    "Python.qock_paper_scissors_solution.executor": "Run",
+    "Python.tic_tac_toe_EST.executor": "Run",
+    "Python.tkinter_test.executor": "Run",
+    "Python.wxGTK_test.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "settings.editor.selected.configurable": "com.jetbrains.python.black.configuration.BlackFormatterConfigurable"
   }
-}</component>
+}]]></component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-python-sdk-495700d161d3-aa17d162503b-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-243.22562.220" />
+        <option value="bundled-python-sdk-884f5ed5d46b-c546a90a8094-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-242.22855.92" />
       </set>
     </attachedChunks>
   </component>
@@ -126,13 +123,75 @@
       <option name="project" value="LOCAL" />
       <updated>1731964369513</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="multiplication table solution, work on fiboncacci sequence functions">
+      <option name="closed" value="true" />
+      <created>1732741266683</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1732741266683</updated>
+    </task>
+    <task id="LOCAL-00006" summary="work on base_jumper program">
+      <option name="closed" value="true" />
+      <created>1733948972625</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1733948972625</updated>
+    </task>
+    <task id="LOCAL-00007" summary="work on base_jumper program">
+      <option name="closed" value="true" />
+      <created>1733951222863</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1733951222863</updated>
+    </task>
+    <task id="LOCAL-00008" summary="work on base_jumper program">
+      <option name="closed" value="true" />
+      <created>1733951469289</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1733951469289</updated>
+    </task>
+    <task id="LOCAL-00009" summary="work on base_jumper program">
+      <option name="closed" value="true" />
+      <created>1734125654412</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1734125654412</updated>
+    </task>
+    <task id="LOCAL-00010" summary="finish hangman game">
+      <option name="closed" value="true" />
+      <created>1734127813832</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1734127813832</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="work on solutions" />
     <MESSAGE value="work on multiplication table solution" />
-    <option name="LAST_COMMIT_MESSAGE" value="work on multiplication table solution" />
+    <MESSAGE value="multiplication table solution, work on fiboncacci sequence functions" />
+    <MESSAGE value="work on base_jumper program" />
+    <MESSAGE value="finish hangman game" />
+    <option name="LAST_COMMIT_MESSAGE" value="finish hangman game" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -142,7 +201,18 @@
           <line>44</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/base_jumper_3_solution.py</url>
+          <line>116</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="PythonConfigurationType">
+        <watch expression="digits" />
+        <watch expression="base" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>
