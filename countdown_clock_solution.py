@@ -4,19 +4,38 @@
 
 from datetime import datetime
 import pyinputplus as pyip
+import time
+import sys
 
-current_time = datetime.now()
+user_input = pyip.inputDatetime(
+    prompt="Enter date and time Day/Month/Year Hours:Minutes \n ",
+    formats=(
+        "%d/%m/%y %H:%M",
+        "%d/%m/%Y %H:%M",
+        "%-d/%m/%y %H:%M",
+        "%-d/%m/%Y %H:%M",
+        "%d/%-m/%y %H:%M",
+        "%d/%-m/%Y %H:%M",
+        "%-d/%-m/%y %H:%M",
+        "%-d/%-m/%Y %H:%M",
+        "%d/%B/%y %H:%M",
+        "%d/%B/%Y %H:%M",
+        "%-d/%B/%y %H:%M",
+        "%-d/%B/%Y %H:%M",
+    ),
+)
 
-print(f'{current_time} is current time')
+while True:
+    current_time = datetime.now()
+    time_left = user_input - current_time
 
-user_input = pyip.inputDatetime(prompt='Enter date and time Day/Month/Year Hours:Minutes \n ',
-                                formats=('%d/%m/%y %H:%M', '%d/%m/%Y %H:%M', '%-d/%m/%y %H:%M', '%-d/%m/%Y %H:%M',
-                                         '%d/%-m/%y %H:%M', '%d/%-m/%Y %H:%M', '%-d/%-m/%y %H:%M',
-                                         '%-d/%-m/%Y %H:%M', '%d/%B/%y %H:%M', '%d/%B/%Y %H:%M', '%-d/%B/%y %H:%M',
-                                         '%-d/%B/%Y %H:%M'))
+    if user_input < current_time:
+        print("your desired time in in the past, try again!")
+        continue
 
-print(user_input)
+    print(f"{str(time_left).split('.')[0]} left until {user_input}...")
+    time.sleep(1)
 
-time_left = user_input - current_time
-
-print(time_left)
+    if time_left.seconds <= 1:
+        print("Countdown has finalized!")
+        break
