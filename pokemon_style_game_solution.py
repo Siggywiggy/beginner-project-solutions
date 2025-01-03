@@ -97,6 +97,7 @@ player_name = pyip.inputStr(prompt="Please enter your name: \n")
 Player_1 = Player(player_name)
 Enemy = Computer_player()
 
+# main game loop
 while True:
 
     # player moves
