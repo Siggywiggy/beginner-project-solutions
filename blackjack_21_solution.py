@@ -8,7 +8,7 @@ import pyinputplus as pyip
 class Deck:
     def __init__(self):
         # initiate the default state of deck of cards
-        # dict key value is amount existing, value
+        # one card of every value in a suite
 
         self.clubs_card_stack = {
             "Ace of clubs": 1,
