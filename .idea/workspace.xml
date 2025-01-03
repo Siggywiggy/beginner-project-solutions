@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="114a2629-faaf-400b-a7d9-a99a11046193" name="Changes" comment="finish pokemon style game solution">
-      <change afterPath="$PROJECT_DIR$/blackjack_21_solution.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pokemon_style_game_solution.py" beforeDir="false" afterPath="$PROJECT_DIR$/pokemon_style_game_solution.py" afterDir="false" />
+    <list default="true" id="114a2629-faaf-400b-a7d9-a99a11046193" name="Changes" comment="finished blackjack game solution">
+      <change beforePath="$PROJECT_DIR$/blackjack_21_solution.py" beforeDir="false" afterPath="$PROJECT_DIR$/blackjack_21_solution.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -182,7 +180,15 @@
       <option name="project" value="LOCAL" />
       <updated>1735855163017</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="finished blackjack game solution">
+      <option name="closed" value="true" />
+      <created>1735937507193</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1735937507193</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -203,7 +209,8 @@
     <MESSAGE value="work on base_jumper program" />
     <MESSAGE value="finish hangman game" />
     <MESSAGE value="finish pokemon style game solution" />
-    <option name="LAST_COMMIT_MESSAGE" value="finish pokemon style game solution" />
+    <MESSAGE value="finished blackjack game solution" />
+    <option name="LAST_COMMIT_MESSAGE" value="finished blackjack game solution" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
