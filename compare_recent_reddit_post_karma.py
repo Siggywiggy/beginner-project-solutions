@@ -1,5 +1,4 @@
 #! python3
-from pkgutil import resolve_name
 
 # https://alpscode.com/blog/how-to-use-reddit-api/
 
