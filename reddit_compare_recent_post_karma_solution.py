@@ -5,7 +5,7 @@
 import requests
 from time import sleep
 import sys
-from reddit_api_credentials import username, password, public_key, secret_key
+from api_credentials import username, password, public_key, secret_key
 
 
 # function to get oauth token
