@@ -3,14 +3,41 @@
 # allow the user to open webbrowser to read the article
 # or continue to the next random wikipedia article
 
-# get the random wikipedia article title and url from the API
+import requests
+import bs4
 
+# import lxml
+import sys
+import webbrowser
 
-# Accept-Encoding: gzip - reduce bandidth usage
-# user agent header - "random wikipedia article retrieval script"
-# api endmpoint - https://en.wikipedia.org/w/api.php
-# https://www.mediawiki.org/wiki/API:Random
-# rnlimit = 1
-# https://www.mediawiki.org/w/api.php?action=query&format=json&list=random&formatversion=2&rnnamespace=0&rnlimit=1
-# https://en.wikipedia.org/wiki/Special:Random?action=render
-# ask the user wether to open the url or continue
+headers = {
+    "User-Agent": "Mozilla/5.0 (X11; Linux x86_64; rv:122.0) Gecko/20100101 Firefox/122.0"
+}
+
+while True:
+    try:
+        article = requests.get("https://en.wikipedia.org/wiki/Special:Random", headers)
+    except requests.exceptions.HTTPError as err:
+        print(f"Something went wrong with downloading a page: {err}")
+        print(err.response.status_code)
+
+    soup_object = bs4.BeautifulSoup(article.content, "lxml")
+
+    # title = soup_object.find_all("#firstHeading", href=True)
+    title = soup_object.select(".mw-page-title-main")
+    url = soup_object.select(".printfooter")
+    # print(article.text)
+    # https://www.tutorialspoint.com/beautiful_soup/beautiful_soup_find_element_using_css_selectors.htm
+
+    print(title)
+    print(url)
+    split_url = (str(url)).split('"')
+    webbrowser.open(split_url[8])
+
+    user_input = input(
+        " type *exit* to exit the program or press Enter to choose another random article: \n"
+    )
+    if user_input == "exit":
+        sys.exit()
+    elif user_input == "":
+        continue
