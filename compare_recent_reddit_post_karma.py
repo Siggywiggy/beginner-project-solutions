@@ -1,10 +1,11 @@
-#! python3
+# ! python3
 
 # https://alpscode.com/blog/how-to-use-reddit-api/
 
 import requests
 from time import sleep
 import sys
+from reddit_api_credentials import username, password, public_key, secret_key
 
 
 # function to get oauth token
@@ -12,10 +13,10 @@ def get_oauth_token():
     base_url = "https://www.reddit.com/"
     data = {
         "grant_type": "password",
-        "username": "reddit_username",
-        "password": "reddit_password",
+        "username": username,
+        "password": password,
     }
-    auth = requests.auth.HTTPBasicAuth("public key", "secret")
+    auth = requests.auth.HTTPBasicAuth(public_key, secret_key)
     url = base_url + "api/v1/access_token"
     headers = {"user-agent": "Karma_comparator_script by Lazy-Long-8140"}
     token = try_post_connection(url, data, headers, auth)
