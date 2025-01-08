@@ -5,8 +5,6 @@
 
 import requests
 import bs4
-
-# import lxml
 import sys
 import webbrowser
 
@@ -15,8 +13,20 @@ headers = {
 }
 
 while True:
+    user_input = input(
+        "Type *exit* to exit the program or press Enter to choose a random article: \n"
+    )
+    if user_input == "exit":
+        sys.exit()
+    elif user_input == "":
+        pass
+    else:
+        print("press Enter or enter *exit* to exit the program")
+        continue
+
     try:
         article = requests.get("https://en.wikipedia.org/wiki/Special:Random", headers)
+        # print(article.text)
     except requests.exceptions.HTTPError as err:
         print(f"Something went wrong with downloading a page: {err}")
         print(err.response.status_code)
@@ -26,18 +36,13 @@ while True:
     # title = soup_object.find_all("#firstHeading", href=True)
     title = soup_object.select(".mw-page-title-main")
     url = soup_object.select(".printfooter")
-    # print(article.text)
-    # https://www.tutorialspoint.com/beautiful_soup/beautiful_soup_find_element_using_css_selectors.htm
+    clean_title = (str(title).split(">"))[1].split("<")[0]
+    clean_url = (str(url)).split('"')[8]
 
-    print(title)
-    print(url)
-    split_url = (str(url)).split('"')
-    webbrowser.open(split_url[8])
-
-    user_input = input(
-        " type *exit* to exit the program or press Enter to choose another random article: \n"
+    input_open = input(
+        f"Would you like to *open* the article about {clean_title} or continue to next random article (press Enter)\n"
     )
-    if user_input == "exit":
-        sys.exit()
-    elif user_input == "":
+    if input_open == "open":
+        webbrowser.open(clean_url)
+    elif input_open == "":
         continue
