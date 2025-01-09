@@ -5,6 +5,7 @@ from api_credentials import openweathermap_api_key as api_key
 import requests
 from datetime import datetime
 import webbrowser
+import sys
 
 
 def location_to_geocode(location, api_key):
@@ -29,9 +30,31 @@ def five_day_forecast(latitude, longitude, api_key):
             base_url + str(latitude) + '&lon=' + str(longitude) + '&units=' + units + '&appid=' + api_key,
             headers=headers)
 
-    except requests.exceptions.RequestException as exc:
-        print(f"Something went wrong: {exc}")
-        print(exc.response.status_code)
+
+    except requests.exceptions.Timeout:
+        for retry in range(5):
+            response_from_api = requests.get(
+                base_url + str(latitude) + '&lon=' + str(longitude) + '&units=' + units + '&appid=' + api_key,
+                headers=headers)
+            if response_from_api.status_code == 200:
+                break
+        else:
+            print(f'Failed to connect in {retry} tries!')
+            sys.exit()
+
+    except requests.exceptions.TooManyRedirects:
+        print('The URL is incorrent!')
+        sys.exit()
+
+    except requests.exceptions.HTTPError as err:
+        print(f'HTTP error! {err}')
+        print(err.response.status_code)
+        sys.exit()
+
+    except requests.exceptions.RequestException as req_exc:
+        print(f"Something went wrong: {req_exc}")
+        print(req_exc.response.status_code)
+        sys.exit()
 
     if response_from_api.status_code == 200:
         sunrise = datetime.fromtimestamp(response_from_api.json()['city']['sunrise'])
