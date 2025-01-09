@@ -8,6 +8,8 @@ import bs4
 import sys
 import webbrowser
 
+# also need to install lxml package!
+
 headers = {
     "User-Agent": "Mozilla/5.0 (X11; Linux x86_64; rv:122.0) Gecko/20100101 Firefox/122.0"
 }
@@ -40,7 +42,7 @@ while True:
     clean_url = (str(url)).split('"')[8]
 
     input_open = input(
-        f"Would you like to *open* the article about {clean_title} or continue to next random article (press Enter)\n"
+        f"Would you like to *open* the article about {clean_title} or continue?\n"
     )
     if input_open == "open":
         webbrowser.open(clean_url)
