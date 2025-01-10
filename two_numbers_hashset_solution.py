@@ -1,5 +1,5 @@
 #! python 3
-# a program to find the 2 numbers from a list of numbers that add up to a target number
+# a program to find the 2 numbers from a list of numbers that add up to a target number and return their indexes
 # hash set method
 # time complexity 0(n) - single iteration over the array
 # auxiliary space - O(n) - space needed for hash set
@@ -9,13 +9,11 @@ target = 9
 
 seen_dict = dict()
 
-for num in numbers:
-    # add the number to a hash set
-    seen_dict[num] = numbers.index(num)
-    # calculate the difference needed from curent num to target num
+for i, num in enumerate(numbers):
+    # add the number and its index to the dictionary
+    seen_dict[num] = i
     diff = target - num
-    # if the difference is already in the hash set we have a matching pair!
     if diff in seen_dict.keys():
-        print(seen_dict[diff], numbers.index(num))
+        print(seen_dict[diff], i)
     else:
         continue
