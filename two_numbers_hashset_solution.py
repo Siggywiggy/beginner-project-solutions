@@ -5,10 +5,10 @@
 # auxiliary space - O(n) - space needed for hash set
 import cProfile
 import timeit
-
+import random
 
 def hashset_2_sum():
-    numbers = [2, 7, 11, 15, 6, 98, 75, 3, 4, 87, 1, 8, 5]
+    numbers = [random.randint(0,100) for num in range(20)]
     target = 9
 
     seen_dict = dict()

@@ -4,10 +4,11 @@
 
 import cProfile
 import timeit
+import random
 
 
 def naive_sum_two_numbers():
-    numbers = [2, 7, 11, 15]
+    numbers = [random.randint(0,100) for num in  range(20)]
     target = 9
 
     # naive approach with memoization optimization
