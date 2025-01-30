@@ -4,8 +4,10 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/../404_link_scanner/.idea/404_link_scanner.iml" filepath="$PROJECT_DIR$/../404_link_scanner/.idea/404_link_scanner.iml" />
       <module fileurl="file://$PROJECT_DIR$/../Automate_Boring_Stuff_Python_Al_Sweigart/.idea/Automate_Boring_Stuff_Python_Al_Sweigart.iml" filepath="$PROJECT_DIR$/../Automate_Boring_Stuff_Python_Al_Sweigart/.idea/Automate_Boring_Stuff_Python_Al_Sweigart.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Recursion_Al_Sweigart/.idea/Recursion_Al_Sweigart.iml" filepath="$PROJECT_DIR$/../Recursion_Al_Sweigart/.idea/Recursion_Al_Sweigart.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/beginner-project-solutions.iml" filepath="$PROJECT_DIR$/.idea/beginner-project-solutions.iml" />
       <module fileurl="file://$PROJECT_DIR$/../beyond_basic_Al_Sweigart/.idea/beyond_basic_Al_Sweigart.iml" filepath="$PROJECT_DIR$/../beyond_basic_Al_Sweigart/.idea/beyond_basic_Al_Sweigart.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../pygame_Al_Sweigart/.idea/pygame_Al_Sweigart.iml" filepath="$PROJECT_DIR$/../pygame_Al_Sweigart/.idea/pygame_Al_Sweigart.iml" />
       <module fileurl="file://$PROJECT_DIR$/../python_gently_explained/.idea/python_gently_explained.iml" filepath="$PROJECT_DIR$/../python_gently_explained/.idea/python_gently_explained.iml" />
     </modules>
   </component>

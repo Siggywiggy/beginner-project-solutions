@@ -12,5 +12,8 @@
     <orderEntry type="module" module-name="Automate_Boring_Stuff_Python_Al_Sweigart" />
     <orderEntry type="module" module-name="beyond_basic_Al_Sweigart" />
     <orderEntry type="module" module-name="404_link_scanner" />
+    <orderEntry type="module" module-name="python_gently_explained" />
+    <orderEntry type="module" module-name="pygame_Al_Sweigart" />
+    <orderEntry type="module" module-name="Recursion_Al_Sweigart" />
   </component>
 </module>
